@@ -1,0 +1,127 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="css/styles.css">
+     
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+
+    <title>ESTETİK TANITIM</title>
+
+    </head>
+
+    <body>
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <div id="introduction" class="section scrollspy">
+            <p>Content </p>
+          </div>
+
+          <div id="structure" class="section scrollspy">
+            <p>Content </p>
+          </div>
+
+          <div id="initialization" class="section scrollspy">
+            <p>Content </p>
+          </div>
+        </div>
+        <div class="col hide-on-small-only m3 l2">
+          <ul class="section table-of-contents">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#structure">Structure</a></li>
+            <li><a href="#initialization">Intialization</a></li>
+          </ul>
+        </div>
+      </div>
+
+       <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/pp1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/pp2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/pp3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/pp4.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/pp5.jpg"></a>
+      </div>
+
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/pp1.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/pp2.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/pp3.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/pp4.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $('.scrollspy').scrollSpy();
+
+          $('.carousel').carousel();
+
+          $('.slider').slider();
+
+          $('.target').pushpin({
+            top: 0,
+            bottom: 1000,
+            offset: 0
+          });
+        });
+      
+
+
+        $('.pushpin-demo-nav').each(function() {
+          var $this = $(this);
+          var $target = $('#' + $(this).attr('data-target'));
+          $this.pushpin({
+            top: $target.offset().top,
+            bottom: $target.offset().top + $target.outerHeight() - $this.height()
+          });
+        });
+
+       
+
+       
+        
+      </script>
+    </body>
+  </html>
