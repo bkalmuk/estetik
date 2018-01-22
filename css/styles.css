@@ -49,3 +49,13 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .input-field .prefix.active {
    color: #4a148c !important;
 }
+
+
+/* REFERANSLAR */
+.refs{
+
+}
+.ref-item{
+    width:25px;
+    height:auto;
+}
