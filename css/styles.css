@@ -4,21 +4,24 @@
 
 footer { padding-left: 0; }
 
-.carousel .carousel-item{ width:40em; }
+.fullWidth{ width:100%; }
 
-p{ text-align:justify; }
+.carousel .carousel-item{ width:40em; }
 
 .pb2{ padding-bottom:2em; }
 .pt1{ padding-top: 1em; }
+.pt2{ padding-top: 2em; }
 .pt4{ padding-top: 4em; }
 .pt6{ padding-top: 6em; }
 .pl2{ padding-left: 2em; }
+.pl1{ padding-left: 1em; }
+.pr1{ padding-right: 1em; }
+.plr1{ padding-left: 1em; padding-right: 1em;
+}
 
 /* NAVIGATION BAR */
 .logo-div{
 	padding-top:0.7em !important;
-	width: 10em;
-	height:auto;
 }
 nav ul li a.active { background-color: rgba(0, 0, 0, 0.1); }
 nav ul li a        { color:#00acc1;}
@@ -27,8 +30,11 @@ nav ul li.b1:hover { background-color: #e57373 !important; }
 nav ul li.b2:hover { background-color:#00bfa5 !important; }
 nav ul li.b3:hover { background-color: #29b6f6  !important; }
 nav ul li.b4:hover { background-color: #26c6da !important; }
-nav ul li.b5:hover { background-color: #ce93d8 !important; }
+nav ul li.b5:hover { background-color: #1de9b6 !important; }
+nav ul li.b6:hover { background-color: #ce93d8 !important; }
 
+
+nav ul.side-nav li a{ color:#00bcd4; }
 
 /* İLETİŞİM */
 
@@ -41,6 +47,16 @@ nav ul li.b5:hover { background-color: #ce93d8 !important; }
 textarea.materialize-textarea:focus  + label { color:#4a148c !important; }
 .input-field input[type=email]:focus + label { color:#4a148c !important; }
  
+/* label underline color */
+.input-field input[type=text],
+.input-field input[type=email], 
+.input-field input[type=password], 
+.input-field input[type=number],
+textarea.materialize-textarea:not([readonly]) {
+    border-bottom: 0.5px solid white !important;
+    box-shadow: 0 0.5px 0 0 white !important;
+}
+
 /* label underline focus color */
 .input-field input[type=text]:focus, 
 .input-field input[type=email]:focus, 
@@ -66,3 +82,6 @@ textarea.materialize-textarea:focus:not([readonly]) {
     margin-top:-6px; 
     padding:0.5em;
 }
+
+
+

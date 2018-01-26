@@ -1,0 +1,55 @@
+﻿{
+  "Cevir": {
+    "btn_tr": "TÜRKÇE",
+    "btn_en": "ENGLISH",
+    "b1": "HOME",
+    "b2": "ABOUT US",
+    "b3": "REFERENCES",
+    "b4": "PROPERTIES",
+    "b5": "GALLERY",
+    "b6": "CONTACT US"  
+  },
+
+"Ozellikler": [
+		{
+	  		"baslik":"RANDEVU",
+	  		"icerik":"Merkezinizde yapmış olduğunuz genel uygulamaları salon bazlı tanımlayabilir. Bir veya birde fazla salon seçilerek istenilen uygulama salonuna randevu verebilirsiniz. Uygula  işlemlerinin  sürelerini randevu gruplarından belirleyebilir. Her uygulamaya ayrı ayrı renk belirleyebilirsiniz. Süreleri önceden belirlenmiş randevu gruplarındaki uygulamalardan herhangi birini seçerek uygulamanın süresi kadar randevu bölümünde uygulama süresi ayrılmaktadır."
+	  	},
+	  	{
+	  		"baslik":"HASTA İZLEME VE TAKİP",
+	  		"icerik":"Hastaların kişisel bilgileri tek tuşla elinizin altında. Parametrik yapıya sahip Estera ,  klinik ve estetisyen bazlı çalışmaktadır. İstenilen tarihteki hastalarınızı listeleyebilir üzerinde değişiklik yapabilirsiniz. Eski hastalarınız tarih ve estetisyen  gözetmeksiniz kolay ve hızlı ulaşma imkanı. Hastalara yapılacak işlemlerin neler olduğunu hasta bazlı  görebilme özelliği.Hastanın belirlenen gün ve saatte randevuya gelip gelmediğini , uygulamaya alınıp alınmadığını ve uygulamadan çıkıp çıkmadığını  randevu bölümünde belirlediğimiz  renklere göre ( Her merkeze göre renklendirme değişebilir.) ayırt edebilirsiniz. İstenilen tarih ve saate verilmiş randevuları bir tuşla hızlı ve pratik bir şekilde bulabilirsiniz."
+	  	},
+	  	{
+	  		"baslik":"HASTA KABUL",
+	  		"icerik":" İşletmenize uyarlanabilen, randevu bağlantılı, Sağlık Bakanlığı kalite yönetimine uygun parametrik Hasta Kabul Ekranı. TC no, barkod vb. uygulamalarda anında hastaya ulaşım. Dosya bazında işlem ekstresi, dosya bakiyelerini aynı ekran görebilir, klinik durumuna göre dosyaların otomatik kapanmasını sağlayabilirsiniz. Kullanıcı yetki kontrolündeki işlem iptali yapılabilir ve bu iptallere ait raporlar alınabilir;  kayıt geri  dönüşü yapılabilir. Tek tuşla hastanın geçmişteki tüm işlemlerini izleyebilirsiniz. Anlaşmalı kurumlara ait hasta kabul şekillerine ait kılavuz notlar; hasta kabul personelinize hatasız ve hızlı kabul yapmasını sağlayacaktır. Barkod, tanımlı evrak dökümleri, raporlamalar, on-line sıramatik vb. sayısız uygulama ile daha başlangıç noktasından ileri de oluşacak sorunları ortadan kaldıran Gemsoft  Hasta Kabul işletmenizdeki en büyük yardımcınızdır. Tek tuşla ya da dosyaları birleştirerek farklı parametrelerde fatura dökümü. Aynı ekranda tahsilat yapabilir; 4 farklı ödeme şekli uygulayabilir, taksite bölebilir, kredi kartı taksitlendirme de otomatik komisyon hesaplatabilirsiniz. Tek tuşla ( Estetisyen ) doktor yoğunluk durum kontrolü sayesinde eşit hasta dağılımı. Günlük ödemelerinizi tek bir tuşla alabilir, tahsilatı yapan personel ve ödeme dağılımlarını  gruplarına göre normal parasal kasanızla gün sonunda karşılaştırabilirsiniz. Matbu evrak bastırmadan hasta sözleşme çıktısına tek bir tuşla ulaşabilirsiniz."
+	  	},
+	  	{
+	  		"baslik":"ESTERA TANIMLAMA BÖLÜMÜ",
+	  		"icerik":"Sınırsız tanımlama işlemleri Epilasyon , Zayıflama, Cilt bakımı ve Depilasyon klinikleri için tanımlamalar Ön görüşme tanımlama bölümü "
+	  	},
+	  	{
+	  		"baslik":"HASTA ÖN GÖRÜŞME",
+	  		"icerik":"Uygulama öncesi görüşme bilgilerinin kaydedilebilmesi. Uygulama yapılacak işlem ve bölgenin hasta ve estetisyen tarafından karşılıklı belirlenmesi. Uygulamanın kaç seans olacağına karar verilmesi. İşlem tutarlarının otomatik güncellenmesi. Hastaya yapılacak tüm bilgilendirmelerin kayıt altında tutulabilmesi.     "
+	  	},
+	  	{
+	  		"baslik":"LAZER EPİLASYON",
+	  		"icerik":"Lazer uygulama işlemlerini (Bölge, Seans, Lazer Tipi, Atım Sayısı, Atım milisaniye, Joule) tümüyle kayıt altına alabilirsiniz. Tarihlerine göre işlemlerin detaylarını görebilirsiniz. Hastanın bitmiş seans işlemlerini yazdırabilir veya arşivleyebilirsiniz.  "
+	  	},
+	  	{
+	  		"baslik":"CİLT BAKIMI",
+	  		"icerik":"Cilt bakım işlemlerinden sonra hastaya yapılan işlemleri hızlı ve pratik bir şekilde sisteme işleyebilirsiniz. Yapmış olduğunuz işlemlerin detaylarını tarih bazında görebilir ve yazdırabilirsiniz. Cilt bakımı uygulamalarının öncesinde ve sonrasındaki değişiklikleri somut bir şekilde görebilmek için çekmiş olduğunuz resimleri sisteme aktarabilir ve resimleri tarih kıstasına göre saklayabilirsiniz. Hastanın önceki işlemlerini tarihlerine göre görebilir ve üzerinde değişiklik yapabilirsiniz. ( Kayıt yapan kullanıcı kısıtlamalı düzeltme yetkisi mevcuttur. )                               "
+	  	},
+	  	{
+	  		"baslik":"ZAYIFLAMA",
+	  		"icerik":"Zayıflama ile ilgili tüm veri ve değerleri girebileceğiniz esnek bir yapı , Bakıldığında anlaşılabilen sade ve net ekran yapısı , Mouse gerek kalmadan kullanabileceğiniz hızlı, pratik ve daha önceden tanımlanmış seçilebilen veri girişleri, Zayıflama uygulamalarının öncesinde ve sonrasındaki değişiklikleri somut bir şekilde görebilmek için çekmiş olduğunuz resimleri sisteme aktarabilir ve resimleri tarih kıstasına göre saklayabilirsiniz. Hastanın önceki işlemlerini tarihlerine göre görebilir ve üzerinde değişiklik yapabilirsiniz. ( Kayıt yapan kullanıcı kısıtlamalı düzeltme yetkisi mevcuttur. )                   "
+	  	},
+	  	{
+	  		"baslik":"EL VE AYAK BAKIMI",
+	  		"icerik":"Ayak bakımında yapılan tüm tedavi işlemlerini girebileceğiniz eksiksiz bir yapı. Tarih bazlı bilgi arşivleyebilme ve girilen verileri yazdırabilme özelliği. Diğer bölümlerde olduğu gibi ayak bakımı bölümünde de hastanın önceki işlemlerini tarihlerine göre görebilir ve üzerinde değişiklik yapabilme özelliği ( Kayıt yapan kullanıcı kısıtlamalı düzeltme yetkisi mevcuttur. ) Hastaya ait notlar bir tuşla elinizin altında. "
+	  	}
+  	
+	]
+
+
+	
+}

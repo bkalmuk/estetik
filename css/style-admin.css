@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+footer { padding-left: 0; }
+
+.fullWidth{ width:100%; }
+
+.pb2{ padding-bottom:2em; }
+
+.pt1{ padding-top: 1em; }
+.pt4{ padding-top: 4em; }
+.pt6{ padding-top: 6em; }
+
+.pl2{ padding-left: 2em; }
+.pl1{ padding-left: 1em; }
+
+
+/* NAVIGATION BAR */
+.logo-div{
+  padding-top:0.7em !important;
+  width: 10em;
+  height:auto;
+}
+nav ul li a.active { background-color: #1de9b6; color:white;}
+nav ul li a        { color:#00acc1;}
+
+/* FORMLAR */
+/* label color */
+.input-field label { color: white !important; }
+
+/* label focus color */
+.input-field input[type=text]:focus  + label { color:#eceff1 !important; }
+textarea.materialize-textarea:focus  + label { color:#eceff1 !important; }
+.input-field input[type=email]:focus + label { color:#eceff1 !important; }
+ 
+/* label underline color */
+.input-field input[type=text],
+.input-field input[type=email], 
+.input-field input[type=password], 
+.input-field input[type=number],
+textarea.materialize-textarea:not([readonly]) {
+    border-bottom: 0.5px solid white !important;
+    box-shadow: 0 0.5px 0 0 white !important;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus, 
+.input-field input[type=email]:focus, 
+.input-field input[type=password]:focus, 
+.input-field input[type=number]:focus, 
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #eceff1 !important;
+    box-shadow: 0 1px 0 0 #eceff1 !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+   color: #eceff1 !important;
+}
+
+
+/* REFERANSLAR */
+
+.ref-item{
+    padding-bottom:10em;
+}
+.ref-item-text{
+    margin-top:-6px; 
+    padding:0.5em;
+}
+
+/* ÖZELLİKLER */
+
+
+
+

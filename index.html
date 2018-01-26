@@ -1,95 +1,172 @@
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link rel="stylesheet" type="text/css" href="css/styles.css">
-     
+<!DOCTYPE html>
+<html>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
 
-    <title>ESTETİK TANITIM</title>
 
-    </head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
 
-    <body>
+  <title>GENOTIP ESTETİK</title>
+
+</head>
+
+<body>
+
+  <div ng-app="Demo_App">
+    <div ng-controller="Demo_CTRL">
+
+      <div class="navbar-fixed" style="z-index: 998;">
       
-        <div class="navbar-fixed ">
-          <nav style="background-color: rgba(255,255,255,0.9);">
-            <div class="nav-wrapper ">
-              <div class="row">
-                <div class="col s9 m3 l3 logo-div">
-                  <img class="responsive-img" src="img/logo.png">
-                </div>
-                <div class="col s3 m9 l9">
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li class="b1"><a href="#anasayfa" class="light" >ANASAYFA</a></li>
-                    <li class="b2"><a href="#hakkimizda" class="light">HAKKIMIZDA</a></li>
-                    <li class="b3"><a href="#referanslar" class="light">REFERANSLAR</a></li>
-                    <li class="b4"><a href="#ozellikler" class="light">ÖZELLİKLER</a></li>
-                    <li class="b5"><a href="#iletisim"  class="light">İLETİŞİM</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+        <nav style="background-color: rgba(255,255,255,0.9);">
+          <div class="nav-wrapper ">
+
+              <a href="#" class="brand-logo cyan-text">
+                <img class="responsive-img" style="width:9em; padding-top: .4em;" src="img/logo.png">
+              </a>
+              <a href="#" data-activates="side-out" class="button-collapse right cyan-text">
+                <i class="material-icons cyan-text">menu</i>
+              </a>
+
+              <ul class="right hide-on-med-and-down light">
+                <li class="b1">
+                  <a href="#anasayfa" ng-bind="Cevir.b1 | translate" >ANASAYFA</a>
+
+                </li>
+                <li class="b2">
+                  <a href="#hakkimizda" ng-bind="Cevir.b2 | translate"  >HAKKIMIZDA</a>
+                </li>
+                <li class="b3">
+                  <a href="#referanslar" ng-bind="Cevir.b3 | translate"  >REFERANSLAR</a>
+                </li>
+                <li class="b4">
+                  <a href="#ozellikler" ng-bind="Cevir.b4 | translate"  >ÖZELLİKLER</a>
+                </li>
+                <li class="b5">
+                  <a href="#galeri" ng-bind="Cevir.b5 | translate"  >GALERİ</a>
+                </li>
+                <li class="b6">
+                  <a href="#iletisim" ng-bind="Cevir.b6 | translate" >İLETİŞİM</a>
+                </li>
+                <li class="pr1">
+                  <a href="#dil" class="dropdown-button" data-activates='dropdown-diller'>
+                    <span>DİL/LANG</span>
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul id="side-out" class="side-nav">
+                <li class="b1">
+                  <a href="#anasayfa" ng-bind="Cevir.b1 | translate"  >ANASAYFA</a>
+                </li>
+                <li class="b2">
+                  <a href="#hakkimizda" ng-bind="Cevir.b2 | translate"  >HAKKIMIZDA</a>
+                </li>
+                <li class="b3">
+                  <a href="#referanslar" ng-bind="Cevir.b3 | translate" >REFERANSLAR</a>
+                </li>
+                <li class="b4">
+                  <a href="#ozellikler" ng-bind="Cevir.b4 | translate" >ÖZELLİKLER</a>
+                </li>
+                <li class="b5">
+                  <a href="#galeri" ng-bind="Cevir.b5 | translate" >GALERİ</a>
+                </li>
+                <li class="b6">
+                  <a href="#iletisim" ng-bind="Cevir.b6 | translate" >İLETİŞİM</a>
+                </li>
+                <li>
+                  <a href="#dil" class="dropdown-button" data-activates='dropdown-diller-side-nav'>
+                    <span>DİL/LANG</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- Dropdown Structure -->
+              <ul id='dropdown-diller' class='dropdown-content'>
+                <li class="valign-wrapper" ng-click="changeLanguage('tr_TR')" >
+                  <img src="img/language/turkey.svg" style="width:5em; padding:.3em;">
+                  <span class="title " ng-bind="Cevir.btn_tr | translate"></span>
+                </li>
+                <li class="divider"></li>
+                <li class="valign-wrapper" ng-click="changeLanguage('en_EN')" >
+                  <img src="img/language/united-kingdom.svg" style="width:5em; padding:.3em;">
+                  <span class="title" ng-bind="Cevir.btn_en | translate"></span>
+                </li>
+              </ul>
+
+              <ul id='dropdown-diller-side-nav' class='dropdown-content fullWidth cyan-text'>
+                <li class="valign-wrapper" ng-click="changeLanguage('tr_TR')" >
+                  <img src="img/language/turkey.svg" style="width:4em; padding:.3em;">
+                  <span class="title" ng-bind="Cevir.btn_tr | translate"></span>
+                </li>
+                <li class="valign-wrapper" ng-click="changeLanguage('en_EN')" >
+                  <img src="img/language/united-kingdom.svg" style="width:4em; padding:.3em;">
+                  <span class="title" ng-bind="Cevir.btn_en | translate"></span>
+                </li>
+              </ul>
+          </div>
+        </nav>
+      </div>
 
       <div id="blue" class="block">
         <div id="anasayfa" class="scrollspy pb2">
-   
-            <div class="slider">
-              <ul class="slides">
-                <li>
-                  <img src="img/anasayfa/pp2.jpg"> 
-                  <div class="caption right-align">
-                    <h3 class="brown-text ">This is our big Tagline!</h3>
-                    <h5 class="light brown-text text-lighten-1 ">Here's our small slogan.</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="img/anasayfa/pp3.jpg"> 
-                  <div class="caption left-align">
-                    <h3>Left Aligned Caption</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="img/anasayfa/pp4.jpg">
-                  <div class="caption center-align">
-                    <h3 class="black-text">Center Aligned Caption</h3>
-                    <h5 class="light black-text">Here's our small slogan.</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="img/anasayfa/pp5.jpg">
-                  <div class="caption left-align">
-                    <h3>This is Tagline!</h3>
-                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                  </div>
-                </li>
-                <li>
-                  <img src="img/anasayfa/pp1.jpg">
-                  <div class="caption left-align">
-                    <h3 class="cyan-text text-darken-4">This is Tagline!</h3>
-                    <h5 class="light cyan-text text-darken-3 ">Here's our small slogan.</h5>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="container light teal-text text-accent-4 ">
-              <br>
-              <p>
-                Lorem ipsum dolor sit amet, pri ei detracto persequeris. Ut quo cibo erat ludus, ea solum placerat definiebas est. Ipsum rationibus ei per. Aeque molestie eum ad, vis nibh tollit lobortis te, vim fabulas periculis temporibus te.
-              </p>
-              <br>
-            </div>
+
+          <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="img/anasayfa/pp2.jpg">
+                <div class="caption right-align">
+                  <h3 class="brown-text ">This is our big Tagline!</h3>
+                  <h5 class="light brown-text text-lighten-1 ">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/anasayfa/pp3.jpg">
+                <div class="caption left-align">
+                  <h3>Left Aligned Caption</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/anasayfa/pp4.jpg">
+                <div class="caption center-align">
+                  <h3 class="black-text">Center Aligned Caption</h3>
+                  <h5 class="light black-text">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/anasayfa/pp5.jpg">
+                <div class="caption left-align">
+                  <h3>This is Tagline!</h3>
+                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+              </li>
+              <li>
+                <img src="img/anasayfa/pp1.jpg">
+                <div class="caption left-align">
+                  <h3 class="cyan-text text-darken-4">This is Tagline!</h3>
+                  <h5 class="light cyan-text text-darken-3 ">Here's our small slogan.</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="container light teal-text text-accent-4 ">
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, pri ei detracto persequeris. Ut quo cibo erat ludus, ea solum placerat definiebas est. Ipsum
+              rationibus ei per. Aeque molestie eum ad, vis nibh tollit lobortis te, vim fabulas periculis temporibus te.
+            </p>
+            <br>
+          </div>
 
         </div>
       </div>
@@ -100,98 +177,181 @@
 
             <div class="row">
               <div class="col l12 s12">
-                
-                <h1 class="thin" >GEN YAZILIM</h1>
+
+                <h1 class="thin">GEN YAZILIM</h1>
                 <p>
-                  GenYazılım firması 1989 senesinde, sağlık hizmeti veren kuruluşlar başta olmak üzere, her sektörden işletmenin Bilgi Yönetim Sistemi ve Yönetim Bilgi Sistemi yazılımlarının ar-ge, üretim, satış, eğitim ve desteği konularında faaliyet göstermek amacıyla Ankara'da kurulmuştur.
-                  <br><br>
-                  Ankara Merkez Ofisi'nden başka İstanbul (Ar-Ge, Yazılım Geliştirme Gurubu), İzmir ve Kayseri şubeleriyle de müşterilerine hizmet vermektedir.
-                  <br><br>
-                  Türkiye'de, sağlık bilgi sistemleri alanında Windows ortamında çalışan ilk yazılım olan GenoTIP'ın üreticisi olan firmamız; donanım, işletim sistemi, veri tabanı ve yazılım geliştirme araçlarındaki teknolojik gelişmelere paralel olarak, yeni talepler ve değişen ihtiyaçlara cevap verebilecek nitelikte ürün ve hizmetlerini sürekli yenileyip güncellemektedir.
-                  <br><br>
-                  Firmamız sadece yazılım üreticisi değil, sağlık hizmeti veren müşterilerinin çözüm ortağıdır. Yazılımın her tür sorunun tek ve mucizevi bir çözümü olmadığının bilincinde olarak; yazılım, donanım, internet vb. gibi bilgi teknolojilerinin; işletmelerin yönetimini kolaylaştıracak biçimde kullanılabilmesini sağlamak amacıyla müşterilerinin ihtiyaç duyduğu danışmanlık ve yönlendirme hizmetlerini de sunmaktadır.
+                  GenYazılım firması 1989 senesinde, sağlık hizmeti veren kuruluşlar başta olmak üzere, her sektörden işletmenin Bilgi Yönetim
+                  Sistemi ve Yönetim Bilgi Sistemi yazılımlarının ar-ge, üretim, satış, eğitim ve desteği konularında faaliyet
+                  göstermek amacıyla Ankara'da kurulmuştur.
+                  <br>
+                  <br> Ankara Merkez Ofisi'nden başka İstanbul (Ar-Ge, Yazılım Geliştirme Gurubu), İzmir ve Kayseri şubeleriyle de
+                  müşterilerine hizmet vermektedir.
+                  <br>
+                  <br> Türkiye'de, sağlık bilgi sistemleri alanında Windows ortamında çalışan ilk yazılım olan GenoTIP'ın üreticisi
+                  olan firmamız; donanım, işletim sistemi, veri tabanı ve yazılım geliştirme araçlarındaki teknolojik gelişmelere
+                  paralel olarak, yeni talepler ve değişen ihtiyaçlara cevap verebilecek nitelikte ürün ve hizmetlerini sürekli
+                  yenileyip güncellemektedir.
+                  <br>
+                  <br> Firmamız sadece yazılım üreticisi değil, sağlık hizmeti veren müşterilerinin çözüm ortağıdır. Yazılımın her
+                  tür sorunun tek ve mucizevi bir çözümü olmadığının bilincinde olarak; yazılım, donanım, internet vb. gibi bilgi
+                  teknolojilerinin; işletmelerin yönetimini kolaylaştıracak biçimde kullanılabilmesini sağlamak amacıyla müşterilerinin
+                  ihtiyaç duyduğu danışmanlık ve yönlendirme hizmetlerini de sunmaktadır.
                 </p>
               </div>
             </div>
             <div class="row">
               <div class="col s12 l6">
                 <h2 class="thin">VİZYONUMUZ</h1>
-                <p>
-                  Türkiye'de ve dünyada tanınan, güven duyulan, en üst seviyede müşteri memnuniyeti sağlayan, istikrarlı bir bilişim firması olmak.
-                </p> 
+                  <p>
+                    Türkiye'de ve dünyada tanınan, güven duyulan, en üst seviyede müşteri memnuniyeti sağlayan, istikrarlı bir bilişim firması
+                    olmak.
+                  </p>
               </div>
               <div class="col s12 l6">
                 <h2 class="thin">MİSYONUMUZ</h1>
-                <p>
-                  Başta Sağlık Hizmeti Sağlayıcı kuruluşlar olmak üzere, B2B alanında nitelikli bilişim çözümleri sağlamak.
-                </p>
-                 <br><br>
+                  <p>
+                    Başta Sağlık Hizmeti Sağlayıcı kuruluşlar olmak üzere, B2B alanında nitelikli bilişim çözümleri sağlamak.
+                  </p>
+                  <br>
+                  <br>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
 
-       <div class="white">
+      <div class="white">
         <div id="referanslar" class="scrollspy pb2 pt6">
-          
+
           <div class="container">
-            <h2 class="thin cyan-text">REFERANSLARIMIZ</h2>
+            <h2 class="thin  light-blue-text text-lighten-1">REFERANSLAR</h2>
             <div class="row">
-              
-              <div class="col s3 m2 l2 ref-item" >
+
+              <div class="col s3 m2 l2 ref-item">
                 <a href="#">
-                  <div class="card cyan white-text">
-                      <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
-                      <div class="ref-item-text light" >Şirket adı</div>
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
                   </div>
-                </a>  
+                </a>
               </div>
-              
-              
-              </div>       
+              <div class="col s3 m2 l2 ref-item">
+                <a href="#">
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s3 m2 l2 ref-item">
+                <a href="#">
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s3 m2 l2 ref-item">
+                <a href="#">
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s3 m2 l2 ref-item">
+                <a href="#">
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s3 m2 l2 ref-item">
+                  <a href="#">
+                    <div class="card  light-blue lighten-1 white-text">
+                      <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s3 m2 l2 ref-item">
+                <a href="#">
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
+              <div class="col s3 m2 l2 ref-item">
+                <a href="#">
+                  <div class="card  light-blue lighten-1 white-text">
+                    <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+                    <div class="ref-item-text light">Şirket adı</div>
+                  </div>
+                </a>
+              </div>
             </div>
+          </div>
 
         </div>
       </div>
 
       <div class="cyan lighten-1">
         <div id="ozellikler" class="scrollspy pb2 ">
-          
+
           <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="img/sablon/r1.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="img/sablon/r2.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="img/sablon/r3.jpg"></a>
-            <a class="carousel-item" href="#four!"><img src="img/sablon/r4.jpg"></a>
-            <a class="carousel-item" href="#five!"><img src="img/sablon/r5.jpg"></a>
+            <a class="carousel-item" href="#">
+              <img src="img/sablon/r1.jpg">
+            </a>
+            <a class="carousel-item" href="#">
+              <img src="img/sablon/r2.jpg">
+            </a>
+            <a class="carousel-item" href="#">
+              <img src="img/sablon/r3.jpg">
+            </a>
+            <a class="carousel-item" href="#">
+              <img src="img/sablon/r4.jpg">
+            </a>
+            <a class="carousel-item" href="#">
+              <img src="img/sablon/r5.jpg">
+            </a>
           </div>
           <br>
           <div class="container white-text thin">
+              <span ng-repeat="data in Ozellikler">
+                <h4 class="light">{{data.baslik | translate}}</h4>
+                <p>{{data.icerik | translate}}</p>
+              </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="teal accent-3 white-text">
+        <div id="galeri" class="scrollspy pb2 pt4">
+
+          <div class="container">
+            <h2 class="thin">EKRAN GÖRÜNTÜLERİ</h2>
             <div class="row">
-              <div class="col s12 l6 ">
-                <h2 class="thin">AEQUE MUSTIOE</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, pri ei detracto persequeris. Ut quo cibo erat ludus, ea solum placerat definiebas est. Ipsum rationibus ei per. Aeque molestie eum ad, vis nibh tollit lobortis te, vim fabulas periculis temporibus te.
-                </p>
+              <div class="col s6 m4 l4">
+                <img class="responsive-img materialboxed pt1" src="img/referanslar/ref-logo1.jpg">
               </div>
-              <div class="col s12 l6">
-                <h2 class="thin">ANFSI SDJAPSDA</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, pri ei detracto persequeris. Ut quo cibo erat ludus, ea solum placerat definiebas est. Ipsum rationibus ei per. Aeque molestie eum ad, vis nibh tollit lobortis te, vim fabulas periculis temporibus te.
-                </p>
-                <br><br>
+              <div class="col s6 m4 l4">
+                <img class="responsive-img materialboxed pt1" src="img/referanslar/ref-logo1.jpg">
               </div>
+              <div class="col s6 m4 l4">
+                <img class="responsive-img materialboxed pt1" src="img/referanslar/ref-logo1.jpg">
+              </div> 
             </div>
           </div>
-         
 
         </div>
       </div>
 
       <div class=" purple lighten-3 white-text">
         <div id="iletisim" class="scrollspy pb2 pt4">
-          
+
           <div class="container">
             <h2 class="thin">İLETİŞİM BİLGİLERİMİZ</h2>
             <div class="row">
@@ -211,7 +371,7 @@
                   <i class="material-icons prefix">mail</i>
                   <input id="email" type="email" class="validate">
                   <label for="email" data-error="wrong" data-success="right">Email</label>
-                </div>  
+                </div>
                 <div class="input-field">
                   <i class="material-icons prefix">title</i>
                   <input id="title" type="text" class="validate">
@@ -221,10 +381,10 @@
                   <i class="material-icons prefix">mode_edit</i>
                   <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
                   <label for="icon_prefix2">Mesajınız</label>
-                </div> 
+                </div>
                 <button class="btn waves-effect waves-light right deep-purple darken-2" type="submit" name="action">Gönder
                   <i class="material-icons right">send</i>
-                </button>   
+                </button>
               </div>
 
               <div class="col s12 m6 l6">
@@ -232,25 +392,22 @@
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10260.258149872028!2d29.041365992416548!3d40.990099656283626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac78a00cfe22b%3A0x1a7a21680f8f497c!2sGeno+Tip!5e0!3m2!1sen!2str!4v1516374826925" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
                 <div class="row thin pl2">
+
                   <div class="col l6">
                     <h5 class="light">İstanbul Şubesi</h5>
-                    <p style="text-align:left;">
+                    <p>
                       Eğitim Mah. Muratpaşa Cad. Çakmakçı Apt. No:7/12 Ziverbey Kadıköy
-                      <br>
-                      Tel: 216-345 03 78
+                      <br> Tel: 216-345 03 78
                     </p>
                   </div>
                   <div class="col l6">
                     <h5 class="light">Ankara Şubesi</h5>
-                    <p style="text-align:left;">
-                      Emek Mah. 23. Sk. No 6/9 Çankaya 
-                      <br>
-                      Tel: 312-419 53 36
-                      <br> 
-                      Faks: 312-418 76 47
+                    <p>
+                      Emek Mah. 23. Sk. No 6/9 Çankaya
+                      <br> Tel: 312-419 53 36
+                      <br> Faks: 312-418 76 47
                     </p>
                   </div>
-                  
                 </div>
               </div>
             </div>
@@ -259,34 +416,76 @@
         </div>
       </div>
 
-    <footer class="page-footer cyan darken-1">
+      <footer class="page-footer cyan darken-1 light">
+        
+        <div class="container pt2">
+          <div class="row">
 
-      <div class="container">
-        <div class="row">
-          <div class="col l4 s12">
-            <h5 class="white-text">Help Materialize Grow</h5>
-            <p class="grey-text text-lighten-4">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-            <a class="btn waves-effect waves-light red lighten-3" href="/support-us.html">Support Us</a>
-          </div>
-          <div class="col l4 s12">
-            <h5 class="white-text">Join the Discussion</h5>
-            <p class="grey-text text-lighten-4">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
-            <a class="btn waves-effect waves-light red lighten-3" target="_blank" href="https://gitter.im/Dogfalo/materialize">Chat</a>
-          </div>
-          <div class="col l4 s12" style="overflow: hidden;">
-            <h5 class="white-text">Connect</h5>
+            <div class="col l5 s12">
+              <div class="row center-align plr1">
+                <div class="col l6 s6">
+                  <a class="btn-floating valign-wrapper" ng-click="changeLanguage('tr_TR')" >
+                    <img src="img/language/turkey.svg" style="">
+                  </a>
+                  <span class="white-text" ng-bind="Cevir.btn_tr | translate"></span>
+                  
+                </div>
+                <div class="col l6 s6">
+                  <a class="btn-floating valign-wrapper" ng-click="changeLanguage('en_EN')" >
+                    <img src="img/language/united-kingdom.svg" style="">
+                  </a>
+                  <span class="white-text" ng-bind="Cevir.btn_en | translate"></span>
+                  
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="row center-align plr1">
+                <p>BİZİ TAKİP EDİN</p>
+                <div class="col l3 s3">
+                  <a href="#" class="btn-floating white"><img style="height:100%; width:auto;" src="img/sosyal-medya/facebook.svg"></a>
+                </div>
+                <div class="col l3 s3">
+                  <a href="#" class="btn-floating white"><img style="height:100%; width:auto;" src="img/sosyal-medya/twitter.svg"></a>
+                </div>
+                <div class="col l3 s3">
+                  <a href="#" class="btn-floating white"><img style="height:100%; width:auto;" src="img/sosyal-medya/instagram.svg"></a>
+                </div>
+                <div class="col l3 s3">
+                  <a href="#" class="btn-floating white"><img style="height:100%; width:auto;" src="img/sosyal-medya/google-plus.svg"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col l7 s12">
+              <div class="row valign-wrapper plr1 pt1">
+                <i class="material-icons prefix">mail</i>
+                <span class="pl1">bilgi@genotıp.com</span>
+              </div>
+              <div class="row valign-wrapper plr1">
+                <i class="material-icons prefix">phone</i>
+                <span class="pl1">(216) 345 03 78</span>
+              </div>
+              <div class="row valign-wrapper plr1">
+                <i class="material-icons prefix">business</i>
+                <span class="pl1">Eğitim Mah. Muratpaşa Cad. Çakmakçı Apt. No:7/12 Ziverbey Kadıköy</span>
+              </div>
+            </div>
+
           </div>
         </div>
-      </div>
-      <img style="margin-top:-35em" src="img/logo-transparent.png">
 
-      <div class="footer-copyright">
-        <div class="container">
-        © 2014-2017 Materialize, All rights reserved.
-        <a class="grey-text text-lighten-4 right" href="https://github.com/Dogfalo/materialize/blob/master/LICENSE">MIT License</a>
+        <div class="footer-copyright">
+          <div class="container">
+            © Copyright 2018 Genyazılım İş Süreçleri Yönetimi 
+            <a class="grey-text text-lighten-4 right" href="#">
+            Tasarım ve Kodlama: BK</a>
+          </div>
         </div>
-      </div>
-    </footer>
+
+      </footer>
+
+    </div>
+  </div>
 
 
 
@@ -294,30 +493,100 @@
 
 
 
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/angular.min.js"></script>
+  <script type="text/javascript" src="js/angular-translate.min.js"></script>
+  
+  <script>
+    $(document).ready(function () {
 
+      Materialize.updateTextFields();
+      $('#textarea1').val('New Text');
+      $('#textarea1').trigger('autoresize');
+      $('.scrollspy').scrollSpy({
+        scrollOffset: 0
+      });
+      $('.carousel').carousel();
+      $('.slider').slider();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+      $('.dropdown-button').dropdown({
+            inDuration: 300,
+            outDuration: 225,
+            constrainWidth: 200, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            gutter: 0, // Spacing from edge
+            belowOrigin: false, // Displays dropdown below the button
+            alignment: 'left', // Displays dropdown with edge aligned to the left of button
+            stopPropagation: false // Stops event propagation
+          }
+        );
+     
+      // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+      $('.collapsible').collapsible();
+      $('.button-collapse').sideNav({
+               menuWidth: 220, // Default is 240
+               edge: 'left', // Choose the horizontal origin
+               closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+               draggable: true // Choose whether you can drag to open on touch screens
+           });
 
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      //Email sending
+      $('#submit').click(function(){
+        var name = $('#name').val();
+        var phone = $('#phone').val();
+        var email = $('#email').var();
+        var title = $('#title').var();
+        var message = $('#message').var();
 
-      <script>
-         $(document).ready(function(){
-
-          Materialize.updateTextFields();
-          $('#textarea1').val('New Text');
-          $('#textarea1').trigger('autoresize');
-          $('.scrollspy').scrollSpy({
-           scrollOffset:0
-          });
-          $('.carousel').carousel();
-          $('.slider').slider();
-          $('.parallax').parallax();
+        var mailData = 'name=' + name + 'phone=' + phone + '&email=' + email + 'title=' + title + 'message=' + message;
+        $.ajax({
+          url: "http://192.168.3.150:8090/mailtest/api/values",
+          type: "POST",
+          data:mailData,
+          success: function(){
+            alert("Mailiniz başarıyla gönderilmiştir!")
+          }
         });
+      });
+    });
 
-          
-          
+    //LANGUAGE - DİL
+    var app = angular.module("Demo_App", ['pascalprecht.translate']);
+    app.controller("Demo_CTRL", ['$translate', '$scope', '$http', function ($translate, $scope, $http) {
+
+            //Sayfa başlangıcında türkçe dil ile çağırma kodu. tr_TR.json dosyasını başka dil ile en_EN.json ile değiştiğinde sayfa ingilizce açılır.
+            $http({
+                method: 'GET',
+                url: 'lang/tr_TR.json' //dil dosyası yolu
+                }).then(function successCallback(translateData) {
+                    angular.extend($scope, translateData.data);
+                }, function errorCallback(translateData_Error) {
+            });
+
+            $scope.changeLanguage = function (langKey) {
+              
+              //Button event dil seçimi sırasında gerçekleşen olay.
+              $translate.use(langKey);
+              $http({
+                  method: 'GET',
+                  url: 'lang/' + langKey + '.json'
+                  }).then(function successCallback(translateData) {
+                      angular.extend($scope, translateData.data);
+                  },function errorCallback(translateData_Error) {
+
+              });
+           
+            };  
+
+    }]);
 
 
-      </script>
-    </body>
-  </html>
+
+
+  </script>
+</body>
+
+</html>

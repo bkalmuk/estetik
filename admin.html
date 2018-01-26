@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link rel="stylesheet" type="text/css" href="css/style-admin.css">
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="description" content="Materialize is a modern responsive CSS framework based on Material Design by Google. ">
+
+  <title>ESTETİK TANITIM</title>
+
+</head>
+
+<body>
+	<div class="navbar-fixed">
+		<nav style="background-color: rgba(255,255,255,0.9);">
+	      <div class="nav-wrapper ">
+	        <div class="row">
+	          <div class="col s9 m3 l3 logo-div">
+	            <img class="responsive-img" src="img/logo.png">
+	          </div>
+	          <div class="col s3 m9 l9">
+	            <ul id="nav-mobile" class="right hide-on-med-and-down">
+	              <li>
+	                <a href="#referanslar" class="light">REFERANSLAR</a>
+	              </li>
+	              <li>
+	                <a href="#ozellikler" class="light">ÖZELLİKLER</a>
+	              </li>
+	              <li>
+	                <a href="#galeri" class="light">GALERİ</a>
+	              </li>
+	              <li>
+	                <a href="#iletisim" class="light">İLETİŞİM</a>
+	              </li>
+	            </ul>
+	          </div>
+	        </div>
+	      </div>
+	    </nav>
+	</div>
+
+    <div class="cyan white-text">
+    	<div id="referanslar" class="scrollspy pb2 pt4">
+    		<div class="container">
+    			<div class="row">
+
+    				<h4 class="thin">REFERANSLARI GÜNCELLE</h4>
+    				<!-- Referans Güncelle Alt Menüsü-->
+    				<ul class="tabs tabs-transparent">
+				        <li class="tab"><a class="active" href="#ref-sil">Referans Sil</a></li>
+				        <li class="tab"><a href="#ref-ekle">Referans Ekle</a></li>
+				    </ul>
+	
+		          	<div id="ref-sil" class="col s12 ">
+		          		<div class="row pt1">
+				    		<div class="col s3 m2 l2  ref-item">	
+					            <div class="card  white cyan-text">
+					                <img class="responsive-img" src="img/referanslar/ref-logo1.jpg">
+					                <div class="ref-item-text light">Şirket adı</div>
+					               	<div class="ref-item-text light">
+					               		<a class="btn fullWidth waves-effect waves-light red">
+					               			<i class="material-icons">delete</i>
+					               		</a>
+					               	</div>
+					            </div>
+					        </div>
+				        </div>
+		          	</div>
+					<div id="ref-ekle" class="col s12">
+						<div class="row pt1">
+							<form action="#">
+								<div class="input-field pt1">
+					              <i class="material-icons prefix">business_center</i>
+					              <input id="name" type="text" class="validate">
+					              <label for="name">Şirket İsmi</label>
+					            </div>
+					            <div class="input-field pt1">
+					              <i class="material-icons prefix">link</i>
+					              <input id="name" type="text" class="validate">
+					              <label for="name">Link</label>
+					            </div>
+					            <div class="input-field file-field ">
+							        <div class="btn white cyan-text">
+							        	<i class="material-icons left">image</i>
+							        	<span>Şirket Logo yükle</span>
+							        	<input type="file">
+								  	</div>
+								    <div class="file-path-wrapper">
+								        <input class="file-path validate" type="text" placeholder="Bir adet dosya seçiniz">
+							      	</div>
+								</div>	
+								<div class="input-field">
+									<a class="waves-effect btn white cyan-text right">
+										KAYDET <i class="material-icons left">save</i>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+		    				
+    			</div>
+    		</div>
+    	</div>
+	</div>
+
+ 	<div class="cyan lighten-1 white-text">
+    	<div id="ozellikler" class="scrollspy pb2 pt4">
+    		<div class="container">
+    			<div class="row">
+
+    				<h4 class="thin">ÖZELLİKLERİ GÜNCELLE</h4>
+
+    				<!-- Referans Güncelle Alt Menüsü-->
+    				<ul class="tabs tabs-transparent">
+				        <li class="tab"><a class="active" href="#ozellik-sil">Özellik Sil</a></li>
+				        <li class="tab"><a href="#ozellik-ekle">Özellik Ekle</a></li>
+				    </ul>
+	
+		          	<div id="ozellik-sil" class="col s12 ">
+		          		<div class="row pt1">
+				    		<ul class="collapsible white cyan-text text-darken-4" data-collapsible="accordion">
+							    <li>
+							     	<div class="collapsible-header">
+							     		<div class="fullWidth">
+							     			<i class="material-icons">stars</i>
+							     			FİRST
+							    			<div class="right">
+							    				<a class="btn-floating waves-effect waves-light red">
+							               			<i class="material-icons" style="width:inherit;">delete</i>
+							               		</a>
+							    			</div>
+							    		</div>
+							     	</div>
+							    	<div class="collapsible-body">
+							    		<span>Lorem ipsum dolor sit amet.</span>
+							    	</div>
+							    </li>
+							    <li>
+							     	<div class="collapsible-header">
+							     		<div class="fullWidth ">
+							     			<i class="material-icons">stars</i>
+							     			SECOND
+							    			<div class="right">
+							    				<a class="btn-floating waves-effect waves-light red">
+							               			<i class="material-icons" style="width:inherit;">delete</i>
+							               		</a>
+							    			</div>
+							    		</div>
+							     	</div>
+							    	<div class="collapsible-body">
+							    		<span>Lorem ipsum dolor sit amet.</span>
+							    	</div>
+							    </li>
+							    <li>
+							     	<div class="collapsible-header">
+							     		<div class="fullWidth">
+							     			<i class="material-icons">stars</i>
+							     			THIRD
+							    			<div class="right">
+							    				<a class="btn-floating waves-effect waves-light red">
+							               			<i class="material-icons" style="width:inherit;">delete</i>
+							               		</a>
+							    			</div>
+							    		</div>
+							     	</div>
+							    	<div class="collapsible-body">
+							    		<span>Lorem ipsum dolor sit amet.</span>
+							    	</div>
+							    </li>
+							</ul>
+				        </div>
+		          	</div>
+
+					<div id="ozellik-ekle" class="col s12">
+						<div class="row pt1">
+							<div class="input-field pt1">
+				              <i class="material-icons prefix">stars</i>
+				              <input id="ozellik-baslıgı" type="text" class="validate">
+				              <label for="ozellık-baslıgı">Özellik başlığı</label>
+				            </div>
+				            <div class="input-field">
+				              <i class="material-icons prefix">assignment</i>
+				              <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+				              <label for="icon_prefix2">Özellik içeriği</label>
+				            </div>
+				            <div class="input-field">
+								<a class="waves-effect btn white cyan-text right">
+									KAYDET <i class="material-icons left">save</i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+    				
+        
+    			</div>
+    		</div>
+    	</div>
+	</div>
+
+	<div class="cyan lighten-2 white-text">
+    	<div id="galeri" class="scrollspy pb2 pt4">
+    		<div class="container">
+    			<div class="row">
+    				<h4 class="thin">GALERİYİ GÜNCELLE</h4>
+
+    				<!-- Referans Güncelle Alt Menüsü-->
+    				<ul class="tabs tabs-transparent">
+				        <li class="tab"><a class="active" href="#goruntu-sil">Görüntü Sil</a></li>
+				        <li class="tab"><a href="#goruntu-ekle">Görüntü Ekle</a></li>
+				    </ul>
+					
+					<div id="goruntu-sil" class="col s12">
+						<div class="row pt1">
+							<div class="col s6 m3 l3">
+					            <img class="responsive-img materialboxed" 
+					            	 src="img/referanslar/ref-logo1.jpg" 				 
+					            	 data-caption="Ekran Görüntüsü Açıklaması">
+
+								<a class="waves-effect btn red right fullWidth">
+									<i class="material-icons">delete</i>
+								</a>
+					        </div>
+					        <div class="col s6 m3 l3">
+					            <img class="responsive-img materialboxed" 
+					            	 src="img/referanslar/ref-logo1.jpg"
+					            	 data-caption="Ekran Görüntüsü Açıklaması">
+
+								<a class="waves-effect btn red right fullWidth">
+									<i class="material-icons">delete</i>
+								</a>
+					        </div>
+						</div>
+					</div>
+
+					<div id="goruntu-ekle" class="col s12">
+						<div class="row pt1">
+							<form action="#">
+							    <div class="input-field">
+					              	<i class="material-icons prefix">art_track</i>
+					              	<input id="goruntu-aciklama" type="text" class="validate">
+					              	<label for="goruntu-aciklama">Görüntü Açıklaması</label>
+					            </div>
+					            <div class="input-field file-field ">
+							        <div class="btn white cyan-text">
+							        	<i class="material-icons left">image</i>
+							        	<span>Görüntü Yükle</span>
+							        	<input type="file">
+							      	</div>
+							      	<div class="file-path-wrapper">
+							        	<input class="file-path validate" type="text" placeholder="Bir adet dosya seçiniz">
+							      	</div>
+								</div>
+								<div class="input-field pt1">
+									<a class="waves-effect btn white cyan-text right">
+										KAYDET <i class="material-icons left">save</i>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+
+    			</div>
+    		</div>
+    	</div>
+	</div>
+
+	 <div class="teal accent-4 white-text">
+    	<div id="iletisim" class="scrollspy pb2 pt4">
+    		<div class="container">
+    			<div class="row">
+
+    				<h4 class="thin">İLETİŞİM BİLGİLERİNİ GÜNCELLE</h4>
+    				<!-- Referans Güncelle Alt Menüsü-->
+    				<ul class="tabs tabs-transparent">
+				        <li class="tab"><a class="active" href="#iletisim-ekle-sil">Adres Ekle/Sil</a></li>
+				        <li class="tab"><a href="#mail-guncelle">Mail güncelle</a></li>
+				    </ul>
+
+    				<div id="iletisim-ekle-sil" class="col s12">
+						<div class="row pt1">
+
+							<div class="col l6 m6 s12 thin">
+								<h4>İletişim Bilgileri</h4>
+								<div class="row valign-wrapper">
+									<div class="col l2">
+										<a class="waves-effect btn-floating red">
+											<i class="material-icons left">delete</i>
+										</a>
+									</div>
+									<div class="col l10">
+										<p><b>İstanbul Şubesi</b></p>
+										<p>Eğitim Mah. Muratpaşa Cad. Çakmakçı Apt. No:7/12 Ziverbey Kadıköy</p>
+										<p>Tel: 216-345 03 78</p>
+									</div>
+								</div>
+								<div class="row valign-wrapper">
+									<div class="col l2">
+										<a class="waves-effect btn-floating red">
+											<i class="material-icons left">delete</i>
+										</a>
+									</div>
+									<div class="col l10">
+										<p><b>Ankara Şubesi</b></p>
+										<p>Emek Mah. 23. Sk. No 6/9 Çankaya </p>
+										<p>Tel: 312-419 53 36</p>
+										<p>Faks: 312-418 76 47</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col l6 m6 s12">
+								<h4>İletişim Ekle</h4>
+								<div class="row pt1">
+									<div class="input-field">
+						              	<i class="material-icons prefix">business</i>
+						              	<input id="adres-ekle" type="text" class="validate">
+						              	<label for="adres-ekle">Adres</label>
+						            </div>
+						            <div class="input-field">
+						              	<i class="material-icons prefix">phone</i>
+						              	<input id="tel" type="text" class="validate">
+						              	<label for="tel">Telefon</label>
+						            </div>
+						            <div class="input-field">
+						              	<i class="material-icons prefix">phone</i>
+						              	<input id="faks" type="text" class="validate">
+						              	<label for="faks">Faks</label>
+						            </div>
+						            <div class="input-field pt1">
+										<a class="waves-effect btn white cyan-text right">
+											KAYDET <i class="material-icons left">save</i>
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="mail-guncelle" class="col s12">
+						<div class="row pt1">
+							<div class="col l6 m6 s12 thin">
+								<h4>Güncel Mail Adresi</h4>
+								<div class="row pt1">
+									<div class="row valign-wrapper">
+										<div class="col l2">
+											<a class="waves-effect btn-floating red">
+												<i class="material-icons left">delete</i>
+											</a>
+										</div>
+										<div class="col l10">
+											<p>bilgi@genyazilim.com</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col l6 m6 s12 thin">
+								<h4>Mail Adresi Ekle</h4>
+								<div class="row pt1">
+									<div class="input-field">
+							            <i class="material-icons prefix">email</i>
+							            <input id="email" type="text" class="validate">
+							          	<label for="email">Email</label>
+							        </div>
+							        <div class="input-field pt1">
+										<a class="waves-effect btn white cyan-text right light">
+											KAYDET <i class="material-icons left">save</i>
+										</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+    			</div>
+    		</div>
+    	</div>
+	</div>
+    
+
+	<footer class="page-footer teal accent-3">
+	   	<div class="footer-copyright">
+	      <div class="container">
+	        © Copyright 2018 Genyazılım İş Süreçleri Yönetimi 
+	        <a class="grey-text text-lighten-4 right" href="#">
+	        Tasarım ve Kodlama: BK</a>
+	      </div>
+	    </div>
+	</footer>
+
+
+
+
+
+
+
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+
+      Materialize.updateTextFields();
+      $('#textarea1').val('New Text');
+      $('#textarea1').trigger('autoresize');
+      $('.scrollspy').scrollSpy({
+        scrollOffset: 0
+      });
+      $('.carousel').carousel();
+      $('.slider').slider();
+      $('.parallax').parallax();
+      $('.materialboxed').materialbox();
+
+      //Email sending
+      $('#save').click(function(){
+ 
+      });
+
+    }); //document.ready closing
+
+
+
+
+
+  </script>
+</body>
+
+</html>
