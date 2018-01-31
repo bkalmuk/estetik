@@ -1,55 +1,77 @@
 ﻿{
-  "Cevir": {
-    "btn_tr": "TÜRKÇE",
-    "btn_en": "ENGLISH",
-    "b1": "HOME",
-    "b2": "ABOUT US",
-    "b3": "REFERENCES",
-    "b4": "PROPERTIES",
-    "b5": "GALLERY",
-    "b6": "CONTACT US"  
-  },
+  	"Cevir": {
+	    "btn_tr": "TÜRKÇE",
+	    "btn_en": "ENGLISH",
+	    "b1": "HOME",
+	    "b2": "ABOUT US",
+	    "b3": "REFERENCES",
+	    "b4": "PROPERTIES",
+	    "b5": "GALLERY",
+	    "b6": "CONTACT US",
 
-"Ozellikler": [
+	    "banner1t1":"Advanced Interface",
+	    "banner1t2":"Let your users have an easy usage",
+	    "banner2t1":"Data Safety",
+	    "banner2t2":"Your datas are stored on our servers and are not accessible to others. Data communication is ensured in a safe way and can not be stolen.",
+	    "banner3t1":"Enhance your business' performance with an advanced reporting capabilities",
+	    "banner3t2":"",
+	    "banner4t1":"Unlimited Data Capasity",
+	    "banner4t2":"You can set as many appointments as you like or save save new clients. It is designed for multiple offices.",
+	    "banner5t1":"Your data will be stored in Cloud!",
+	    "banner5t2":"No Data loss anymore! Doesn’t matter wherever you are, you can still review and inspect your beauty center",
+
+	    "bannerAlti":"Genotıp Estetik is accesible from all the devices. Monitor the operations and activities undergoing your company, independently with your location.",
+  		
+  		"hakkimizdaBaslik":"GEN SOFTWARE",
+  		"hakkimizda":"GenYazılım was established in 1989,Ankara with the purpose of particularly health service providers’ and all the other business sectors' R&D, production, sales, training and support of Information Management System programmes and Management Information System programmes. Beside Ankara central office, It also provides services to its clients from Istanbul(R & D, Software Development Group), İzmir and Kayseri offices. Our firm that is the producer of health information system programme GenoTIP which is the first software runs on Windows environment; constantly renovate and update its products and services that are in capable of responding to new demands and changing needs, in parallel with the developing technology of hardware, operating system, database and software development tools. Our company is not only a software maker, but a solution partner for healthcare customers. By being aware that software is not the one and only absolute solution the every possible problem; aimed to provide required education and consultancy services for the where demanded.",
+  		"vizyonumuzBaslik":"OUR VISION",
+  		"vizyonumuz":"To become one of the most well known companies in the IT field which offers %100 customer satisfaction.",
+  		"misyonumuzBaslik":"OUR MISSION",
+  		"misyonumuz":"To provide high-quality IT solutions in the B2B field especially for the health-care provider firms.",
+  		
+  		"isimSoyisim":"Name Surname",
+  		"telefon":"Phone",
+  		"email":"Email",
+  		"konuBaslik":"Topic Title",
+  		"mesaj":"Your Message",
+  		"gonder":"SEND",
+
+  		"takipet":"FOLLOW US"
+  	},
+
+	"Ozellikler": [
 		{
-	  		"baslik":"RANDEVU",
-	  		"icerik":"Merkezinizde yapmış olduğunuz genel uygulamaları salon bazlı tanımlayabilir. Bir veya birde fazla salon seçilerek istenilen uygulama salonuna randevu verebilirsiniz. Uygula  işlemlerinin  sürelerini randevu gruplarından belirleyebilir. Her uygulamaya ayrı ayrı renk belirleyebilirsiniz. Süreleri önceden belirlenmiş randevu gruplarındaki uygulamalardan herhangi birini seçerek uygulamanın süresi kadar randevu bölümünde uygulama süresi ayrılmaktadır."
+	  		"baslik":"CUSTOMER FOLLOW UP AND REPORTING",
+	  		"icerik":"You can easily follow up your clients’ personal informations, appointments and proceeds."
 	  	},
 	  	{
-	  		"baslik":"HASTA İZLEME VE TAKİP",
-	  		"icerik":"Hastaların kişisel bilgileri tek tuşla elinizin altında. Parametrik yapıya sahip Estera ,  klinik ve estetisyen bazlı çalışmaktadır. İstenilen tarihteki hastalarınızı listeleyebilir üzerinde değişiklik yapabilirsiniz. Eski hastalarınız tarih ve estetisyen  gözetmeksiniz kolay ve hızlı ulaşma imkanı. Hastalara yapılacak işlemlerin neler olduğunu hasta bazlı  görebilme özelliği.Hastanın belirlenen gün ve saatte randevuya gelip gelmediğini , uygulamaya alınıp alınmadığını ve uygulamadan çıkıp çıkmadığını  randevu bölümünde belirlediğimiz  renklere göre ( Her merkeze göre renklendirme değişebilir.) ayırt edebilirsiniz. İstenilen tarih ve saate verilmiş randevuları bir tuşla hızlı ve pratik bir şekilde bulabilirsiniz."
+	  		"baslik":"PATIENT MONITORING AND FOLLOW UP",
+	  		"icerik":"You can reach your client’s all informations by only a simple click. Our program is clinical and aesthetic based. Therefore you can list your patients on any requested date and make changes. You can easily and swiftly reach to your old clients regardless of date or aesthetician. You can easily see and inspect on the appointments section in the program whether the patient came to the appointment or whether or not the patient has been taken to practice. Also you can easily and practically find the appointments on requested date and time by only a click."
 	  	},
 	  	{
-	  		"baslik":"HASTA KABUL",
-	  		"icerik":" İşletmenize uyarlanabilen, randevu bağlantılı, Sağlık Bakanlığı kalite yönetimine uygun parametrik Hasta Kabul Ekranı. TC no, barkod vb. uygulamalarda anında hastaya ulaşım. Dosya bazında işlem ekstresi, dosya bakiyelerini aynı ekran görebilir, klinik durumuna göre dosyaların otomatik kapanmasını sağlayabilirsiniz. Kullanıcı yetki kontrolündeki işlem iptali yapılabilir ve bu iptallere ait raporlar alınabilir;  kayıt geri  dönüşü yapılabilir. Tek tuşla hastanın geçmişteki tüm işlemlerini izleyebilirsiniz. Anlaşmalı kurumlara ait hasta kabul şekillerine ait kılavuz notlar; hasta kabul personelinize hatasız ve hızlı kabul yapmasını sağlayacaktır. Barkod, tanımlı evrak dökümleri, raporlamalar, on-line sıramatik vb. sayısız uygulama ile daha başlangıç noktasından ileri de oluşacak sorunları ortadan kaldıran Gemsoft  Hasta Kabul işletmenizdeki en büyük yardımcınızdır. Tek tuşla ya da dosyaları birleştirerek farklı parametrelerde fatura dökümü. Aynı ekranda tahsilat yapabilir; 4 farklı ödeme şekli uygulayabilir, taksite bölebilir, kredi kartı taksitlendirme de otomatik komisyon hesaplatabilirsiniz. Tek tuşla ( Estetisyen ) doktor yoğunluk durum kontrolü sayesinde eşit hasta dağılımı. Günlük ödemelerinizi tek bir tuşla alabilir, tahsilatı yapan personel ve ödeme dağılımlarını  gruplarına göre normal parasal kasanızla gün sonunda karşılaştırabilirsiniz. Matbu evrak bastırmadan hasta sözleşme çıktısına tek bir tuşla ulaşabilirsiniz."
+	  		"baslik":"AUTHORIZATION SYSTEM",
+	  		"icerik":"You can create more than one user and set a password for that user. You can also remove security problems by limiting usage of the user."
 	  	},
 	  	{
-	  		"baslik":"ESTERA TANIMLAMA BÖLÜMÜ",
-	  		"icerik":"Sınırsız tanımlama işlemleri Epilasyon , Zayıflama, Cilt bakımı ve Depilasyon klinikleri için tanımlamalar Ön görüşme tanımlama bölümü "
+	  		"baslik":"STOCK FOLLOW UP AND REPORTING",
+	  		"icerik":"You can follow inventory inputs and outputs within the system. By setting critical stock levels, you can automatically order the desired products from the companies that you have previously determined in case of a lack of products in your stocks."
 	  	},
 	  	{
-	  		"baslik":"HASTA ÖN GÖRÜŞME",
-	  		"icerik":"Uygulama öncesi görüşme bilgilerinin kaydedilebilmesi. Uygulama yapılacak işlem ve bölgenin hasta ve estetisyen tarafından karşılıklı belirlenmesi. Uygulamanın kaç seans olacağına karar verilmesi. İşlem tutarlarının otomatik güncellenmesi. Hastaya yapılacak tüm bilgilendirmelerin kayıt altında tutulabilmesi.     "
+	  		"baslik":"APPOINTMENTS COORDINATION",
+	  		"icerik":"You can make appointments based on your current staff and/or room and make changes on these appointments. In this way, your appointments will not interfere,therefore the staff who made the appointment will save time. You can easily make an appointment without waiting your customers on the phone or consultant. You can automatically send an e-mail or SMS to the customers whose appointment day has come and you can transfer your documents to Excel."
 	  	},
 	  	{
-	  		"baslik":"LAZER EPİLASYON",
-	  		"icerik":"Lazer uygulama işlemlerini (Bölge, Seans, Lazer Tipi, Atım Sayısı, Atım milisaniye, Joule) tümüyle kayıt altına alabilirsiniz. Tarihlerine göre işlemlerin detaylarını görebilirsiniz. Hastanın bitmiş seans işlemlerini yazdırabilir veya arşivleyebilirsiniz.  "
+	  		"baslik":"STAFF JOB/PREMIUM FOLLOW UP",
+	  		"icerik":"You can see which staff provides services for your specified date range, or the income your staff earns for your salon. You can automatically calculate the premiums you have set for your employees and you can get a monthly staff-based premium list."
 	  	},
 	  	{
-	  		"baslik":"CİLT BAKIMI",
-	  		"icerik":"Cilt bakım işlemlerinden sonra hastaya yapılan işlemleri hızlı ve pratik bir şekilde sisteme işleyebilirsiniz. Yapmış olduğunuz işlemlerin detaylarını tarih bazında görebilir ve yazdırabilirsiniz. Cilt bakımı uygulamalarının öncesinde ve sonrasındaki değişiklikleri somut bir şekilde görebilmek için çekmiş olduğunuz resimleri sisteme aktarabilir ve resimleri tarih kıstasına göre saklayabilirsiniz. Hastanın önceki işlemlerini tarihlerine göre görebilir ve üzerinde değişiklik yapabilirsiniz. ( Kayıt yapan kullanıcı kısıtlamalı düzeltme yetkisi mevcuttur. )                               "
+	  		"baslik":"SMS AND EMAİL SENDING",
+	  		"icerik":"You can send bulk SMS to your clients and remind them the special days or appointment dates."
 	  	},
 	  	{
-	  		"baslik":"ZAYIFLAMA",
-	  		"icerik":"Zayıflama ile ilgili tüm veri ve değerleri girebileceğiniz esnek bir yapı , Bakıldığında anlaşılabilen sade ve net ekran yapısı , Mouse gerek kalmadan kullanabileceğiniz hızlı, pratik ve daha önceden tanımlanmış seçilebilen veri girişleri, Zayıflama uygulamalarının öncesinde ve sonrasındaki değişiklikleri somut bir şekilde görebilmek için çekmiş olduğunuz resimleri sisteme aktarabilir ve resimleri tarih kıstasına göre saklayabilirsiniz. Hastanın önceki işlemlerini tarihlerine göre görebilir ve üzerinde değişiklik yapabilirsiniz. ( Kayıt yapan kullanıcı kısıtlamalı düzeltme yetkisi mevcuttur. )                   "
-	  	},
-	  	{
-	  		"baslik":"EL VE AYAK BAKIMI",
-	  		"icerik":"Ayak bakımında yapılan tüm tedavi işlemlerini girebileceğiniz eksiksiz bir yapı. Tarih bazlı bilgi arşivleyebilme ve girilen verileri yazdırabilme özelliği. Diğer bölümlerde olduğu gibi ayak bakımı bölümünde de hastanın önceki işlemlerini tarihlerine göre görebilir ve üzerinde değişiklik yapabilme özelliği ( Kayıt yapan kullanıcı kısıtlamalı düzeltme yetkisi mevcuttur. ) Hastaya ait notlar bir tuşla elinizin altında. "
+	  		"baslik":"CASE TRANSACTIONS AND FOLLOW-UP",
+	  		"icerik":"You can follow up the cash case of your saloon daily and monitor the case transections. Also you can take under control the credit card transections and inspect the expenses."
 	  	}
   	
 	]
-
-
-	
 }
